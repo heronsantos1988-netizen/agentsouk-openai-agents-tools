@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentsouk-openai-agents-tools"
+version = "0.1.0"
+description = "OpenAI Agents SDK function tools for Agent Souk"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "HSANTOS Desktop Hub"}]
+dependencies = [
+  "agentsouk>=0.4.1,<0.5",
+  "openai-agents>=0.22,<0.23",
+]
+
+[project.urls]
+Homepage = "https://github.com/heronsantos1988-netizen/agentsouk-openai-agents-tools"
+Documentation = "https://api.agentsouk.dev/skill.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
